@@ -1,0 +1,37 @@
+.sidenav {
+    width: 20%;
+    background-color: #030303;
+    color: white;
+    float: left;
+}
+
+.sidenav-items {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.sidenav-items-logo {
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.sidenav-items-list li {
+    list-style-type: none;
+    padding-bottom: 1.5rem;
+}
+
+.sidenav-items-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidenav-admin-list li {
+    list-style-type: none;
+    padding-bottom: 1.5rem;
+}
+
+.sidenav-admin-list li a {
+    text-decoration: none;
+    color: white;
+}

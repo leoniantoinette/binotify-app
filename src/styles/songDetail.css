@@ -1,0 +1,97 @@
+.songDetail {
+  width: 100%;
+  display: flex;
+}
+
+.song-section {
+  width: 80%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 63%,
+    rgba(94, 226, 201, 1) 87%,
+    rgba(0, 238, 186, 1) 100%
+  );
+}
+
+.song-player {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(57, 71, 67, 0.279);
+  border-radius: 0.5rem;
+}
+
+.song-player img {
+  width: 25%;
+  object-fit: cover;
+}
+
+.song-desc {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: space-between;
+}
+
+.song-desc p {
+  font-size: 1rem;
+  font-weight: thin;
+  font-stretch: extra-expanded;
+  padding: 0.5rem 0rem;
+}
+
+.song-edit {
+  margin-top: 3rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.song-edit-form {
+  display: flex;
+  padding-top: 1rem;
+  width: 100%;
+}
+
+.song-edit-desc {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+
+.song-edit-desc input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.2rem;
+  margin: 0;
+}
+
+.song-edit-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-edit-img img {
+  width: 50%;
+  padding-bottom: 0.5rem;
+}
+
+.song-submit-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.song-submit-form button {
+  padding: 1rem 3rem;
+  font-size: 0.8rem;
+}

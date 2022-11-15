@@ -1,0 +1,167 @@
+body {
+  display: flex;
+}
+
+.search-container {
+  width: 80%;
+  background: linear-gradient(
+    #7F53AC 10%,
+    rgba(31, 31, 31, 1) 40%
+  );
+  min-height: 100vh;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin: 1rem 2rem;
+}
+
+.search-input {
+  padding: 0.7rem 1.5rem;
+  border-radius: 1.2rem;
+  border: rgb(2, 0, 36);
+  margin: 0 0.5rem;
+}
+
+#search-term {
+  width: 40%;
+}
+
+#search-by {
+  width: 13%;
+}
+
+.search p {
+  color: white;
+}
+
+.sort-filter {
+  margin: 1rem 2rem;
+}
+
+.sort-filter select {
+  width: 17%;
+}
+
+.buttons {
+  margin: 0 2rem;
+}
+
+.btn {
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: #9D9D9D;
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: 0.6s all;
+  margin: 0 0.5rem;
+  padding: 0.7rem 2rem;
+}
+
+.btn:hover {
+  background-color: #DCDCDC;
+  color: #5E5E5E;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  padding: 0.7rem 2rem;
+}
+
+.songlist {
+  color: gray;
+  margin-top: 1rem;
+}
+
+.songrow:hover {
+  background-color: #6e6e6e71;
+}
+
+.songlist-table {
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+}
+
+.songtitle {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+}
+
+.songtitle-img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.songtitle-desc {
+  padding-left: 1rem;
+}
+
+.songtitle-title {
+  font-weight: 300;
+  font-stretch: ultra-expanded;
+  padding-bottom: 0.2rem;
+  color: #fff;
+}
+
+.songtitle td {
+  font-size: 0.8rem;
+}
+
+.songtitle-artist {
+  font-weight: 300;
+  font-stretch: ultra-expanded;
+  font-size: 0.8rem;
+}
+
+.th-number {
+  width: 4%;
+  text-align: left;
+}
+
+.th-title {
+  width: 65%;
+}
+
+.th-genre .th-year {
+  width: 15%;
+}
+
+.th-row {
+  padding: 2rem;
+  border-bottom: 0.1rem solid #fff;
+}
+
+.th-row th {
+  font-size: 0.8rem;
+  font-weight: thin;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  list-style: none;
+}
+
+.page-item {
+  padding: 0.5rem;
+}
+
+.page-link:hover {
+  color: #e76f51;
+  cursor: pointer;
+}
+
+.page-active {
+  border-radius: 50%;
+  padding: 0.5rem;
+  background: #fff;
+  color: #000;
+}

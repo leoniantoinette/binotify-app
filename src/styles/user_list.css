@@ -1,0 +1,50 @@
+body {
+  color: white;
+  display: flex;
+}
+
+.userlist-container {
+  flex: 80%;
+  background: linear-gradient(
+    #537895 10%,
+    #09203F 20%,
+    rgba(31, 31, 31, 1) 60%
+  );
+}
+
+h1 {
+  text-align: center;
+}
+
+.userlist-title {
+  margin: 2rem 0;
+}
+
+table {
+  width: 75%;
+  border-collapse: collapse;
+  margin: 0 auto 4rem auto;
+}
+
+th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  height: 2rem;
+}
+
+th {
+  background-color: #606E76;
+}
+
+td {
+  color: black;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #B0BABF;
+}
+
+tr:nth-child(odd) {
+  background-color: #d3d8db;
+}

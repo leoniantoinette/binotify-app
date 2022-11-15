@@ -34,11 +34,11 @@ link berikut ini pada browser di komputer Anda (localhost/tugas-besar-1). Lalu, 
 ## Screenshot
 1. Halaman Login <img src="src/assets/readme/login.png" />
 2. Halaman Register <img src="src/assets/readme/register.png" />
-3. Halaman Homepage<img src="src/assets/readme/homepage.png" />
-4. Halaman Tambah Album dan Lagu<img src="src/assets/readme/tambahAlbum.png" />
-5. Halaman Daftar Album <img src="src/assets/readme/daftarAlbum.png" />
+3. Halaman Homepage<img src="src/assets/readme/homepage.jpg" />
+4. Halaman Tambah Album dan Lagu<img src="src/assets/readme/tambahAlbum.jpg" />
+5. Halaman Daftar Album <img src="src/assets/readme/daftarAlbum.jpg" />
 6. Halaman Detail Album <img src="src/assets/readme/detailAlbum.jpg" />
-7. Halaman Detail Lagu <img src="src/assets/readme/detailLagu.png" />
+7. Halaman Detail Lagu <img src="src/assets/readme/detailLagu.jpg" />
 8. Halaman Daftar User <img src="src/assets/readme/daftarUser.jpg" />
 9. Halaman Search, Sort, Filter <img src="src/assets/readme/search.jpg" />
 

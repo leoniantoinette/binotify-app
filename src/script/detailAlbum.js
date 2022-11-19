@@ -5,7 +5,7 @@ const cover = document.getElementById("cover");
 const imgPreview = document.getElementById("img-preview");
 const createBtn = document.getElementById("create-btn");
 const deleteBtn = document.getElementById("delete-btn");
-const deleteBtn2 = document.getElementById("delete2-btn");
+const deleteBtn2 = document.querySelectorAll(".delete2-btn");
 const errorText = document.getElementById("error-text");
 const successText = document.getElementById("success-text");
 const closeBtn = document.getElementsByClassName("close-btn");
@@ -170,25 +170,28 @@ save2Btn.addEventListener("click", () => {
         });
 });
 
-deleteBtn2.addEventListener("click", () => {
-
-    const dataSong = {
-        songId: deleteBtn2.value,
-    };
-    console.log(dataSong);
-
-    const formData = new FormData();
-    formData.set("dataSong", JSON.stringify(dataSong));
-    postDataAlbum("php/album/delete2.php", formData)
-        .then((response) => JSON.parse(response))
-        .then((obj) => {
-            if (obj.status) {
-                console.log("deleted");
-                setTimeout(() => {
-                    location.replace(window.location.href);
-                }, 2000);
-            } else {
-                console.log("failed");
-            }
+deleteBtn2.forEach(element => {
+    {
+        element.addEventListener("click", () => {
+            const dataSong = {
+                songId: element.value,
+            };
+            console.log(dataSong);
+    
+            const formData = new FormData();
+            formData.set("dataSong", JSON.stringify(dataSong));
+            postDataAlbum("php/album/delete2.php", formData)
+                .then((response) => JSON.parse(response))
+                .then((obj) => {
+                    if (obj.status) {
+                        console.log("deleted");
+                        setTimeout(() => {
+                            location.replace(window.location.href);
+                        }, 2000);
+                    } else {
+                        console.log("failed");
+                    }
+                });
         });
-});
+    }
+}); 

@@ -101,7 +101,7 @@ $result2 = mysqli_fetch_assoc($data2);
                 if ($_SESSION['isAdmin'] == 1) {
               ?>
                   <td>
-                    <button title="delete2-btn" id='delete2-btn' value="<?php echo $row['song_id'] ?>"><img class="songtitle-img2" src="assets/CoverImages/delete.png" alt="" /></button>
+                    <button title="delete2-btn" class='delete2-btn' value="<?php echo $row['song_id'] ?>"><img class="songtitle-img2" src="assets/CoverImages/delete.png" alt="" /></button>
                   </td>
               <?php }
               } ?>

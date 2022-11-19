@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 28 Okt 2022 pada 09.25
+-- Waktu pembuatan: 19 Nov 2022 pada 08.01
 -- Versi server: 10.6.5-MariaDB
 -- Versi PHP: 7.3.33
 
@@ -42,43 +42,43 @@ CREATE TABLE `album` (
 --
 
 INSERT INTO `album` (`album_id`, `Judul`, `Penyanyi`, `Total_duration`, `Image_path`, `Tanggal_terbit`, `Genre`) VALUES
-(1, 'Loan Interviewer', 'Otilia Tillman', 846, 'assets/CoverImages/goldfish.jpg', '2008-01-29', 'Pop'),
-(9, 'Manager of Food Preparation', 'Ms. Ruthie Satterfield Sr.', 434, 'assets/CoverImages/goldfish.jpg', '2016-06-07', 'Rock'),
-(15, 'Dot Etcher', 'Stanley Bins', 2140, 'assets/CoverImages/goldfish.jpg', '2007-03-16', 'Pop'),
-(16, 'Soldering Machine Setter', 'Prof. Meta Schmeler IV', 1188, 'assets/CoverImages/goldfish.jpg', '1989-06-06', 'Jazz'),
-(23, 'Medical Transcriptionist', 'Abigayle Casper', 2329, 'assets/CoverImages/goldfish.jpg', '1998-06-01', 'Jazz'),
-(24, 'Computer Specialist', 'Summer Kshlerin', 2140, 'assets/CoverImages/goldfish.jpg', '2019-10-06', 'Pop'),
-(26, 'Crane and Tower Operator', 'Arthur Brekke', 2140, 'assets/CoverImages/goldfish.jpg', '1970-07-12', 'Pop'),
-(29, 'Trainer', 'Mr. Randal Smith Jr.', 2140, 'assets/CoverImages/goldfish.jpg', '1978-07-21', 'Pop'),
-(37, 'Motion Picture Projectionist', 'Kari Frami', 2329, 'assets/CoverImages/goldfish.jpg', '2012-11-30', 'Jazz'),
-(48, 'Designer', 'Bud Block III', 3140, 'assets/CoverImages/goldfish.jpg', '1997-03-07', 'Rock'),
-(50, 'Textile Cutting Machine Operator', 'Dale Rice', 2140, 'assets/CoverImages/goldfish.jpg', '1996-04-27', 'Pop'),
-(52, 'Conservation Scientist', 'Brad Swift', 3140, 'assets/CoverImages/goldfish.jpg', '2004-09-09', 'Rock'),
-(53, 'Fire-Prevention Engineer', 'Darion Larson', 2140, 'assets/CoverImages/goldfish.jpg', '1983-04-06', 'Pop'),
-(54, 'Pressure Vessel Inspector', 'Cierra Bashirian', 3140, 'assets/CoverImages/goldfish.jpg', '1993-11-25', 'Rock'),
-(61, 'Entertainment Attendant', 'Ana Vandervort', 2329, 'assets/CoverImages/goldfish.jpg', '1993-12-15', 'Jazz'),
-(71, 'Communications Equipment Operator', 'Dr. Cordia Schoen', 2140, 'assets/CoverImages/goldfish.jpg', '1979-11-12', 'Pop'),
-(74, 'Home', 'Lonie Witting PhD', 2329, 'assets/CoverImages/goldfish.jpg', '1972-11-10', 'Jazz'),
-(76, 'd', 'Ms. Era Pagac DDS', 2140, 'assets/CoverImages/goldfish.jpg', '0222-02-23', 'Jazz'),
-(79, 'Locker Room Attendant', 'Alice Farrell', 2140, 'assets/CoverImages/goldfish.jpg', '1974-09-16', 'Pop'),
-(83, 'Gas Appliance Repairer', 'Markus Vandervort', 2329, 'assets/CoverImages/goldfish.jpg', '2001-09-22', 'Jazz'),
-(89, 'Housekeeper', 'Carmelo Cronin', 2140, 'assets/CoverImages/goldfish.jpg', '1992-07-10', 'Pop'),
-(97, 'Telecommunications Equipment Installer', 'Hoyt Rodriguez', 2140, 'assets/CoverImages/goldfish.jpg', '1979-04-23', 'Pop'),
-(130, 'Management Analyst', 'Laisha Jacobi DDS', 2329, 'assets/CoverImages/goldfish.jpg', '2014-08-12', 'Jazz'),
-(214, 'Mathematical Science Teacher', 'Roy Powlowski', 2329, 'assets/CoverImages/goldfish.jpg', '1973-06-05', 'Jazz'),
-(797, 'Computer-Controlled Machine Tool Operator', 'Margarette Medhurst', 2329, 'assets/CoverImages/goldfish.jpg', '1995-06-28', 'Jazz'),
-(821, 'Geoscientists', 'Percy Nitzsche DDS', 2329, 'assets/CoverImages/goldfish.jpg', '1994-12-15', 'Jazz'),
-(943, 'Library Worker', 'Rashad Mitchell', 2329, 'assets/CoverImages/goldfish.jpg', '2019-08-15', 'Jazz'),
-(992, 'Plate Finisher', 'Monroe Legros', 2329, 'assets/CoverImages/goldfish.jpg', '2017-06-11', 'Jazz'),
-(1182, 'Crushing Grinding Machine Operator', 'Elisa Schaefer', 2329, 'assets/CoverImages/goldfish.jpg', '1983-01-23', 'Jazz'),
-(3109, 'Platemaker', 'Ms. Edythe Monahan', 2329, 'assets/CoverImages/goldfish.jpg', '1998-08-19', 'Jazz'),
-(3362, 'Leoni Gilang Yola', 'Ardith Batz', 408, 'assets/CoverImages/goldfish.jpg', '2021-08-18', 'Country'),
-(3926, 'Obstetrician', 'Chloe Bailey', 2329, 'assets/CoverImages/goldfish.jpg', '1997-04-18', 'Jazz'),
-(7143, 'Financial Manager', 'Harley Weimann', 2329, 'assets/CoverImages/goldfish.jpg', '2004-04-01', 'Jazz'),
-(8608, 'Segmental Paver', 'Bailee Beahan', 2329, 'assets/CoverImages/goldfish.jpg', '2014-10-05', 'Jazz'),
-(8609, 'album', 'yola', 0, 'assets/CoverImages/goldfish.jpg', '2929-01-31', 'Rock'),
-(8610, 'a', 'a', 0, 'assets/CoverImages/goldfish.jpg', '3333-02-23', 'Rock'),
-(8611, 'Fish', 'BLACKPINK', 0, 'assets/CoverImages/goldfish.jpg', '2020-12-20', 'Pop');
+(1, 'mamaaa', 'Otilia Tillman', 630, 'assets/CoverImages/1.', '2022-10-05', 'Pop'),
+(9, 'Manager of Food Preparation', 'Ms. Ruthie Satterfield Sr.', 1953, 'assets/CoverImages/likedLogo.png', '2016-06-07', 'Rock'),
+(15, 'Dot Etcher', 'Stanley Bins', 0, 'assets/CoverImages/likedLogo.png', '2007-03-16', 'Pop'),
+(16, 'Soldering Machine Setter', 'Prof. Meta Schmeler IV', 2178, 'assets/CoverImages/likedLogo.png', '1989-06-06', 'Jazz'),
+(23, 'Medical Transcriptionist', 'Abigayle Casper', 0, 'assets/CoverImages/likedLogo.png', '1998-06-01', 'Jazz'),
+(24, 'Computer Specialist', 'Summer Kshlerin', 0, 'assets/CoverImages/likedLogo.png', '2019-10-06', 'Pop'),
+(26, 'Crane and Tower Operator', 'Arthur Brekke', 0, 'assets/CoverImages/likedLogo.png', '1970-07-12', 'Pop'),
+(29, 'Trainer', 'Mr. Randal Smith Jr.', 0, 'assets/CoverImages/likedLogo.png', '1978-07-21', 'Pop'),
+(30, 'Boilermaker', 'Miss Aiyana Rath', 0, 'assets/CoverImages/likedLogo.png', '2014-08-12', 'Jazz'),
+(37, 'Motion Picture Projectionist', 'Kari Frami', 0, 'assets/CoverImages/likedLogo.png', '2012-11-30', 'Jazz'),
+(48, 'Designer', 'Bud Block III', 0, 'assets/CoverImages/likedLogo.png', '1997-03-07', 'Rock'),
+(49, 'Automotive Technician', 'Mayra Romaguera', 0, 'assets/CoverImages/likedLogo.png', '2002-08-16', 'Rock'),
+(50, 'Textile Cutting Machine Operator', 'Dale Rice', 0, 'assets/CoverImages/likedLogo.png', '1996-04-27', 'Pop'),
+(52, 'Conservation Scientist', 'Brad Swift', 0, 'assets/CoverImages/likedLogo.png', '2004-09-09', 'Rock'),
+(53, 'Fire-Prevention Engineer', 'Darion Larson', 0, 'assets/CoverImages/likedLogo.png', '1983-04-06', 'Pop'),
+(54, 'Pressure Vessel Inspector', 'Cierra Bashirian', 0, 'assets/CoverImages/likedLogo.png', '1993-11-25', 'Rock'),
+(55, 'Central Office and PBX Installers', 'Sammie Hyatt', 0, 'assets/CoverImages/likedLogo.png', '1996-04-18', 'Jazz'),
+(61, 'Entertainment Attendant', 'Ana Vandervort', 0, 'assets/CoverImages/likedLogo.png', '1993-12-15', 'Jazz'),
+(71, 'Communications Equipment Operator', 'Dr. Cordia Schoen', 0, 'assets/CoverImages/likedLogo.png', '1979-11-12', 'Pop'),
+(74, 'Home', 'Lonie Witting PhD', 0, 'assets/CoverImages/likedLogo.png', '1972-11-10', 'Jazz'),
+(76, 'Aircraft Engine Specialist', 'Ms. Era Pagac DDS', 0, 'assets/CoverImages/likedLogo.png', '1972-02-01', 'Pop'),
+(79, 'Locker Room Attendant', 'Alice Farrell', 0, 'assets/CoverImages/likedLogo.png', '1974-09-16', 'Pop'),
+(83, 'Gas Appliance Repairer', 'Markus Vandervort', 0, 'assets/CoverImages/likedLogo.png', '2001-09-22', 'Jazz'),
+(89, 'Housekeeper', 'Carmelo Cronin', 0, 'assets/CoverImages/likedLogo.png', '1992-07-10', 'Pop'),
+(97, 'Telecommunications Equipment Installer', 'Hoyt Rodriguez', 0, 'assets/CoverImages/likedLogo.png', '1979-04-23', 'Pop'),
+(130, 'Management Analyst', 'Laisha Jacobi DDS', 0, 'assets/CoverImages/likedLogo.png', '2014-08-12', 'Jazz'),
+(214, 'Mathematical Science Teacher', 'Roy Powlowski', 0, 'assets/CoverImages/likedLogo.png', '1973-06-05', 'Jazz'),
+(797, 'Computer-Controlled Machine Tool Operator', 'Margarette Medhurst', 0, 'assets/CoverImages/likedLogo.png', '1995-06-28', 'Jazz'),
+(821, 'Geoscientists', 'Percy Nitzsche DDS', 0, 'assets/CoverImages/likedLogo.png', '1994-12-15', 'Jazz'),
+(943, 'Library Worker', 'Rashad Mitchell', 0, 'assets/CoverImages/likedLogo.png', '2019-08-15', 'Jazz'),
+(992, 'Plate Finisher', 'Monroe Legros', 0, 'assets/CoverImages/likedLogo.png', '2017-06-11', 'Jazz'),
+(1182, 'Crushing Grinding Machine Operator', 'Elisa Schaefer', 0, 'assets/CoverImages/likedLogo.png', '1983-01-23', 'Jazz'),
+(3109, 'Platemaker', 'Ms. Edythe Monahan', 0, 'assets/CoverImages/likedLogo.png', '1998-08-19', 'Jazz'),
+(3362, 'Animal Care Workers', 'Ardith Batz', 0, 'assets/CoverImages/likedLogo.png', '2021-08-18', 'Jazz'),
+(3926, 'Obstetrician', 'Chloe Bailey', 0, 'assets/CoverImages/likedLogo.png', '1997-04-18', 'Jazz'),
+(7143, 'Financial Manager', 'Harley Weimann', 0, 'assets/CoverImages/likedLogo.png', '2004-04-01', 'Jazz'),
+(8608, 'Segmental Paver', 'Bailee Beahan', 0, 'assets/CoverImages/likedLogo.png', '2014-10-05', 'Jazz');
 
 -- --------------------------------------------------------
 
@@ -114,22 +114,32 @@ CREATE TABLE `song` (
 --
 
 INSERT INTO `song` (`song_id`, `Judul`, `Penyanyi`, `Tanggal_terbit`, `Genre`, `Duration`, `Audio_path`, `Image_path`, `album_id`) VALUES
-(1, 'Marine Architect', 'Jayme Leffler', '1971-07-29', 'Pop', 210, 'assets/Song/BLACKPINK - Ice Cream.mp3', 'assets/CoverImages/panda.jpg', 3362),
-(926, 'Casting Machine Set-Up Operator', 'Ms. Kathleen Hermann', '1977-06-30', 'Jazz', 198, 'assets/Song/BLACKPINK - Ice Cream.mp3', 'assets/CoverImages/panda.jpg', 3362),
-(945, 'Shuttle Car Operator', 'Dr. Cydney Huel', '1996-06-02', 'Pop', 216, 'assets/Song/BLACKPINK - Ice Cream.mp3', 'assets/CoverImages/panda.jpg', 1),
-(1021, 'Psychology Teacher', 'Montana Wunsch', '1973-08-21', 'Rock', 217, 'assets/Song/BLACKPINK - Ice Cream.mp3', 'assets/CoverImages/panda.jpg', 9),
-(1288, 'Animal Control Worker', 'Chasity Toy Jr.', '1993-02-16', 'Jazz', 198, 'assets/Song/BLACKPINK - Ice Cream.mp3', 'assets/CoverImages/panda.jpg', 16),
-(2149, 'Budget Analyst', 'Akeem Carroll', '1984-11-08', 'Pop', 210, 'assets/Song/BLACKPINK - Ice Cream.mp3', 'assets/CoverImages/panda.jpg', 1),
-(2155, 'Public Transportation Inspector', 'Miss Anna Hammes MD', '2011-08-13', 'Pop', 210, 'assets/Song/BLACKPINK - Ice Cream.mp3', 'assets/CoverImages/panda.jpg', 1),
-(2260, 'Sawing Machine Operator', 'Miss Arlene Raynor DVM', '1996-09-14', 'Jazz', 198, 'assets/Song/BLACKPINK - Ice Cream.mp3', 'assets/CoverImages/panda.jpg', 16),
-(2480, 'Correspondence Clerk', 'Mr. Joseph Lynch', '2000-05-08', 'Pop', 210, 'assets/Song/BLACKPINK - Ice Cream.mp3', 'assets/CoverImages/panda.jpg', 1),
-(3224, 'Camera Repairer', 'Prof. David Legros DVM', '2006-05-16', 'Jazz', 198, 'assets/Song/BLACKPINK - Ice Cream.mp3', 'assets/CoverImages/panda.jpg', 16),
-(3826, 'Surveyor', 'Madisyn Kozey', '1987-11-13', 'Jazz', 198, 'assets/Song/BLACKPINK - Ice Cream.mp3', 'assets/CoverImages/panda.jpg', 16),
-(4435, 'Usher', 'Andrew Bradtke', '1997-11-04', 'Jazz', 198, 'assets/Song/BLACKPINK - Ice Cream.mp3', 'assets/CoverImages/panda.jpg', 16),
-(4527, 'Streetcar Operator', 'Alvina Schowalter', '2009-01-28', 'Rock', 217, 'assets/Song/BLACKPINK - Ice Cream.mp3', 'assets/CoverImages/panda.jpg', 9),
-(5058, 'Silversmith', 'Fredy Bailey PhD', '2017-04-20', 'Jazz', 198, 'assets/Song/BLACKPINK - Ice Cream.mp3', 'assets/CoverImages/panda.jpg', 16),
-(9943, 'Interaksi', 'Tulus', '2017-02-20', 'Pop', 11, 'assets/Song/BLACKPINK - Ice Cream.mp3', 'assets/CoverImages/panda.jpg', NULL),
-(9944, 'Ice Cream', 'BLACKPINK', '2018-09-13', 'Rnb', 183, 'assets/Song/BLACKPINK - Ice Cream.mp3', 'assets/CoverImages/panda.jpg', NULL);
+(1021, 'Psychology Teacher', 'Montana Wunsch', '1973-08-21', 'Rock', 217, '../assets/song/', 'assets/CoverImages/likedLogo.png', 9),
+(1288, 'Animal Control Worker', 'Chasity Toy Jr.', '1993-02-16', 'Jazz', 198, '../assets/song/', 'assets/CoverImages/likedLogo.png', 16),
+(2149, 'Budget Analyst', 'Akeem Carroll', '1984-11-08', 'Pop', 210, '../assets/song/', 'assets/CoverImages/likedLogo.png', 1),
+(2155, 'Public Transportation Inspector', 'Miss Anna Hammes MD', '2011-08-13', 'Pop', 210, '../assets/song/', 'assets/CoverImages/likedLogo.png', 1),
+(2260, 'Sawing Machine Operator', 'Miss Arlene Raynor DVM', '1996-09-14', 'Jazz', 198, '../assets/song/', 'assets/CoverImages/likedLogo.png', 16),
+(2480, 'Correspondence Clerk', 'Mr. Joseph Lynch', '2000-05-08', 'Pop', 210, '../assets/song/', 'assets/CoverImages/likedLogo.png', 1),
+(3224, 'Camera Repairer', 'Prof. David Legros DVM', '2006-05-16', 'Jazz', 198, '../assets/song/', 'assets/CoverImages/likedLogo.png', 16),
+(3826, 'Surveyor', 'Madisyn Kozey', '1987-11-13', 'Jazz', 198, '../assets/song/', 'assets/CoverImages/likedLogo.png', 16),
+(4435, 'Usher', 'Andrew Bradtke', '1997-11-04', 'Jazz', 198, '../assets/song/', 'assets/CoverImages/likedLogo.png', 16),
+(4527, 'Streetcar Operator', 'Alvina Schowalter', '2009-01-28', 'Rock', 217, '../assets/song/', 'assets/CoverImages/likedLogo.png', 9),
+(5022, 'Private Detective and Investigator', 'Mrs. Christelle Heidenreich V', '2009-11-11', 'Rock', 217, '../assets/song/', 'assets/CoverImages/likedLogo.png', 9),
+(5058, 'Silversmith', 'Fredy Bailey PhD', '2017-04-20', 'Jazz', 198, '../assets/song/', 'assets/CoverImages/likedLogo.png', 16),
+(5380, 'Motorcycle Mechanic', 'Justine Waters', '1990-01-31', 'Rock', 217, '../assets/song/', 'assets/CoverImages/likedLogo.png', 9),
+(6024, 'Carpenter Assembler and Repairer', 'Tony Ryan', '2003-08-23', 'Rock', 217, '../assets/song/', 'assets/CoverImages/likedLogo.png', 9),
+(6223, 'Database Manager', 'Pamela Wuckert', '1978-12-25', 'Jazz', 198, '../assets/song/', 'assets/CoverImages/likedLogo.png', NULL),
+(6491, 'Architectural Drafter', 'Ms. Freida Kiehn', '2002-03-19', 'Rock', 217, '../assets/song/', 'assets/CoverImages/likedLogo.png', 9),
+(7121, 'Orthodontist', 'Monte Donnelly', '2012-08-06', 'Rock', 217, '../assets/song/', 'assets/CoverImages/likedLogo.png', 9),
+(8018, 'Freight and Material Mover', 'Dr. Malcolm Hettinger Jr.', '2016-11-14', 'Jazz', 198, '../assets/song/', 'assets/CoverImages/likedLogo.png', 16),
+(8184, 'Stringed Instrument Repairer and Tuner', 'Alivia Feest', '2001-08-29', 'Jazz', 198, '../assets/song/', 'assets/CoverImages/likedLogo.png', 16),
+(8404, 'Sawing Machine Setter', 'Miss Yvonne Bayer', '1990-07-04', 'Jazz', 198, '../assets/song/', 'assets/CoverImages/likedLogo.png', 16),
+(8863, 'Retail Salesperson', 'Alexanne Hickle', '1997-03-08', 'Jazz', 198, '../assets/song/', 'assets/CoverImages/likedLogo.png', 16),
+(9356, 'Engineering Manager', 'Dr. Lula McLaughlin', '2010-10-06', 'Jazz', 198, '../assets/song/', 'assets/CoverImages/likedLogo.png', 16),
+(9570, 'Captain', 'Dr. Magdalena Eichmann', '2008-04-01', 'Rock', 217, '../assets/song/', 'assets/CoverImages/likedLogo.png', 9),
+(9628, 'Aviation Inspector', 'Alicia Dach', '1974-12-04', 'Jazz', 198, '../assets/song/', 'assets/CoverImages/likedLogo.png', NULL),
+(9932, 'Mathematical Scientist', 'Willow Cremin Jr.', '1981-08-03', 'Rock', 217, '../assets/song/', 'assets/CoverImages/likedLogo.png', 9),
+(9934, 'gatau apa', 'akudong', '2022-10-18', 'Jazz', 223, 'assets/Song/TWICE What is Love_ M-V.mp3', 'assets/CoverImages/Gambar-Pemandangan-Alam-Danau-1460.jpg', NULL);
 
 --
 -- Trigger `song`
@@ -146,12 +156,33 @@ DELIMITER ;
 DELIMITER $$
 CREATE TRIGGER `update_duration` AFTER UPDATE ON `song` FOR EACH ROW begin
     update album
-    inner join duration_view
-    on album.album_id=duration_view.album_id
-    set album.Total_duration=duration_view.durasi;
+    set album.Total_duration = 
+    CASE
+    when album.album_id in (select album_id from duration_view) then (select durasi from duration_view where duration_view.album_id = album.album_id)
+    else 0
+    end;
 end
 $$
 DELIMITER ;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `subscription`
+--
+
+CREATE TABLE `subscription` (
+  `creator_id` int(11) NOT NULL,
+  `subscriber_id` int(11) NOT NULL,
+  `status` enum('PENDING','ACCEPTED','REJECTED','') NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `subscription`
+--
+
+INSERT INTO `subscription` (`creator_id`, `subscriber_id`, `status`) VALUES
+(1, 1, 'PENDING');
 
 -- --------------------------------------------------------
 
@@ -273,11 +304,9 @@ INSERT INTO `user` (`user_id`, `email`, `password`, `username`, `isAdmin`) VALUE
 (978574098, '12@nanan', '$2y$10$9nO4PSaLhYHaGfmacRCy9O5KpPg2.UCSw.q2wbGrxugKX/h1ongEe', 'huhu', 0),
 (978574099, 'fllbryola2020@gmail.com', '$2y$10$5B.CLCzBpwccz6JhaQn.fuO9JcFPX/4uBa92X24eD6Sl2I0rG.PqG', 'ayutidur', 0),
 (978574100, 'freakyfun@gmail.com', '$2y$10$hzu2LE7vu4VisBGh72C/fOKW5BBzwABgqJebmO4RlkK1GTYOJHD52', 'freakyfun', 1),
-(978574101, 'a@gmail.com', '$2y$10$3wpBOAvZt.JHqw9nd3Zttesj5I1dJB/C6pC6Qx2qsQkSshoEaE/jG', 'a', 0),
-(978574102, 'aa@gmail.com', '$2y$10$Ajmcy5ALawmtK1W8MI7LpOmqw1.G5Dz8pYSFS/MGCa4ExYjh9Wfg6', 'aa', 0),
-(978574103, 'b@gmail.com', '$2y$10$cJufrHg7BIMwMB1h081lmuzc9GYRqAHzut6wkLmT1.vPbyPsOeWlC', 'b', 0),
-(978574104, 'cc@gmail.com', '$2y$10$6FuZkXuLoa0NwYmaOR/ZOuVT1TAawlU/OohaK9SQhmH2sG/9cxkkC', 'cc', 0),
-(978574105, 'd@gmail.com', '$2y$10$.mbMVhKjHNG.GbrpyeRQD.rGE3XaXpZ5OOEr5jgcbEUtlaQmWAowS', 'd', 0);
+(978574102, 'hhhh@gmail.com', '$2y$10$OYTyTBNZa29RIR0rz9v30.7LrTEtFF8cLNpV1MCSkZIl12cLb8Gtu', 'itb13520140', 0),
+(978574104, '', '$2y$10$SNRVj3GM6shTmdDY/kawh.Mq4Wtl3fUyP.hlb1bBBcTNA4Xy2DTE.', '', 0),
+(978574105, 'ee@gmail.com', '$2y$10$xDNowDRmzyA1yRnwmWNEo.XFhJhrxFu9IeLPC7f4tTf6eJM6NfY.K', 'f', 0);
 
 -- --------------------------------------------------------
 
@@ -306,6 +335,13 @@ ALTER TABLE `song`
   ADD KEY `update_album` (`album_id`);
 
 --
+-- Indeks untuk tabel `subscription`
+--
+ALTER TABLE `subscription`
+  ADD PRIMARY KEY (`creator_id`,`subscriber_id`),
+  ADD KEY `subscriber_id` (`subscriber_id`);
+
+--
 -- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
@@ -321,13 +357,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `album`
 --
 ALTER TABLE `album`
-  MODIFY `album_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8612;
+  MODIFY `album_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8623;
 
 --
 -- AUTO_INCREMENT untuk tabel `song`
 --
 ALTER TABLE `song`
-  MODIFY `song_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9945;
+  MODIFY `song_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9935;
 
 --
 -- AUTO_INCREMENT untuk tabel `user`
@@ -344,6 +380,12 @@ ALTER TABLE `user`
 --
 ALTER TABLE `song`
   ADD CONSTRAINT `update_album` FOREIGN KEY (`album_id`) REFERENCES `album` (`album_id`);
+
+--
+-- Ketidakleluasaan untuk tabel `subscription`
+--
+ALTER TABLE `subscription`
+  ADD CONSTRAINT `subscription_ibfk_1` FOREIGN KEY (`subscriber_id`) REFERENCES `user` (`user_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

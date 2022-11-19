@@ -20,14 +20,14 @@ if (isset($_POST['register'])) {
             $result = mysqli_query($conn, $sql);
             if ($result) {
                 echo "<script>alert('Registration Successful!')</script>";
-                $username = "";
-                $email = "";
-                $_POST['password_1'] = "";
-                $_POST['password_2'] = "";
                 $_SESSION['login'] = true;
                 $_SESSION['username'] = $username;
                 $_SESSION['email'] = $email;
                 $_SESSION['isAdmin'] = 0;
+                $username = "";
+                $email = "";
+                $_POST['password_1'] = "";
+                $_POST['password_2'] = "";
                 header("location: ../homepageUser.php");
             } else {
                 echo "<script>alert('Registration Failed!')</script>";

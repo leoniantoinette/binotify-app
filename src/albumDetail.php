@@ -70,7 +70,13 @@ $result2 = mysqli_fetch_assoc($data2);
             <th class="th-duration">DURATION</th>
             <th class="th-genre">GENRE</th>
             <th class="th-year">YEAR</th>
-            <th class="th-delete">DELETE</th>
+            <?php
+            if (isset($_SESSION['login']) && isset($_SESSION['isAdmin'])) {
+              if ($_SESSION['isAdmin'] == 1) {
+            ?>
+                <th class="th-delete">DELETE</th>
+            <?php }
+            } ?>
           </tr>
           <?php foreach ($result as $row) : ?>
             <tr class="songrow">
@@ -90,111 +96,123 @@ $result2 = mysqli_fetch_assoc($data2);
               <td><?= $row['Duration'] ?></td>
               <td><?= $row['Genre'] ?></td>
               <td><?= date('Y', strtotime($row['Tanggal_terbit'])) ?></td>
-              <td>
-              <button title="delete2-btn" id='delete2-btn' value="<?php echo $row['song_id'] ?>"><img class="songtitle-img2" src="assets/CoverImages/delete.png" alt="" /></button>
-              </td>
+              <?php
+              if (isset($_SESSION['login']) && isset($_SESSION['isAdmin'])) {
+                if ($_SESSION['isAdmin'] == 1) {
+              ?>
+                  <td>
+                    <button title="delete2-btn" id='delete2-btn' value="<?php echo $row['song_id'] ?>"><img class="songtitle-img2" src="assets/CoverImages/delete.png" alt="" /></button>
+                  </td>
+              <?php }
+              } ?>
 
             </tr>
           <?php endforeach; ?>
         </table>
       </div>
-      <div class="song-edit">
-        <h3>Edit Album</h3>
-        <div class="alert error">
-          <span class="close-btn">&times;</span>
-          <strong id="error-text"></strong>
-        </div>
-        <div class="alert success">
-          <span class="close-btn">&times;</span>
-          <strong id="success-text"></strong>
-        </div>
-        <div class="form-container">
-          <div class="form-container-input">
-            <div class="form-input-img">
-              <p class="form-label">Cover Album</p>
-              <div class="img-container">
-                <img src="assets/songdefault.jpeg" alt="album" id="img-preview">
-              </div>
-              <input type="file" class="input-img" accept="image/jpg, image/png, image/jpeg" name="cover" id="cover">
+      <?php
+      if (isset($_SESSION['login']) && isset($_SESSION['isAdmin'])) {
+        if ($_SESSION['isAdmin'] == 1) {
+      ?>
+          <div class="song-edit">
+            <h3>Edit Album</h3>
+            <div class="alert error">
+              <span class="close-btn">&times;</span>
+              <strong id="error-text"></strong>
             </div>
-            <div class="form-input-data">
-              <div class="row">
-                <p class="form-label">Judul Album</p>
-                <input type="text" class="form-input" id="judul" value="<?= $result2['Judul'] ?>">
-              </div>
+            <div class="alert success">
+              <span class="close-btn">&times;</span>
+              <strong id="success-text"></strong>
+            </div>
+            <div class="form-container">
+              <div class="form-container-input">
+                <div class="form-input-img">
+                  <p class="form-label">Cover Album</p>
+                  <div class="img-container">
+                    <img src="assets/songdefault.jpeg" alt="album" id="img-preview">
+                  </div>
+                  <input type="file" class="input-img" accept="image/jpg, image/png, image/jpeg" name="cover" id="cover">
+                </div>
+                <div class="form-input-data">
+                  <div class="row">
+                    <p class="form-label">Judul Album</p>
+                    <input type="text" class="form-input" id="judul" value="<?= $result2['Judul'] ?>">
+                  </div>
 
-              <div class="row">
-                <p class="form-label">Tanggal Terbit</p>
-                <input type="date" class="form-input" id="tanggal-terbit" value="<?= $result2['Tanggal_terbit'] ?>">
-              </div>
-              <div class="row">
-                <p class="form-label">Genre</p>
-                <select class="form-input" id="genre">
-                  <option disabled value>Select Genre</option>
-                  <option value="Pop" <?php if ($result2['Genre'] == "Pop") echo 'selected="selected"'; ?>>Pop</option>
-                  <option value="Rock" <?php if ($result2['Genre'] == "Rock") echo 'selected="selected"'; ?>>Rock</option>
-                  <option value="Hiphop" <?php if ($result2['Genre'] == "Hiphop") echo 'selected="selected"'; ?>>Hip Hop</option>
-                  <option value="Country" <?php if ($result2['Genre'] == "Country") echo 'selected="selected"'; ?>>Country</option>
-                  <option value="Rnb" <?php if ($result2['Genre'] == "Rnb") echo 'selected="selected"'; ?>>Rythm and Blues (RnB)</option>
-                  <option value="Jazz" <?php if ($result2['Genre'] == "Jazz") echo 'selected="selected"'; ?>>Jazz</option>
-                  <option value="Edm" <?php if ($result2['Genre'] == "Edm") echo 'selected="selected"'; ?>>Electronic Dance Music</option>
-                  <option value="Classical" <?php if ($result2['Genre'] == "Classical") echo 'selected="selected"'; ?>>Classical</option>
-                  <option value="Indie" <?php if ($result2['Genre'] == "Indie") echo 'selected="selected"'; ?>>Indie</option>
-                  <option value="Dangdut" <?php if ($result2['Genre'] == "Dangdut") echo 'selected="selected"'; ?>>Dangdut</option>
-                </select>
+                  <div class="row">
+                    <p class="form-label">Tanggal Terbit</p>
+                    <input type="date" class="form-input" id="tanggal-terbit" value="<?= $result2['Tanggal_terbit'] ?>">
+                  </div>
+                  <div class="row">
+                    <p class="form-label">Genre</p>
+                    <select class="form-input" id="genre">
+                      <option disabled value>Select Genre</option>
+                      <option value="Pop" <?php if ($result2['Genre'] == "Pop") echo 'selected="selected"'; ?>>Pop</option>
+                      <option value="Rock" <?php if ($result2['Genre'] == "Rock") echo 'selected="selected"'; ?>>Rock</option>
+                      <option value="Hiphop" <?php if ($result2['Genre'] == "Hiphop") echo 'selected="selected"'; ?>>Hip Hop</option>
+                      <option value="Country" <?php if ($result2['Genre'] == "Country") echo 'selected="selected"'; ?>>Country</option>
+                      <option value="Rnb" <?php if ($result2['Genre'] == "Rnb") echo 'selected="selected"'; ?>>Rythm and Blues (RnB)</option>
+                      <option value="Jazz" <?php if ($result2['Genre'] == "Jazz") echo 'selected="selected"'; ?>>Jazz</option>
+                      <option value="Edm" <?php if ($result2['Genre'] == "Edm") echo 'selected="selected"'; ?>>Electronic Dance Music</option>
+                      <option value="Classical" <?php if ($result2['Genre'] == "Classical") echo 'selected="selected"'; ?>>Classical</option>
+                      <option value="Indie" <?php if ($result2['Genre'] == "Indie") echo 'selected="selected"'; ?>>Indie</option>
+                      <option value="Dangdut" <?php if ($result2['Genre'] == "Dangdut") echo 'selected="selected"'; ?>>Dangdut</option>
+                    </select>
 
-              </div>
-              <input type="hidden" id="album-id" value="<?= $id ?>">
-              <div class="button">
-                <button id="create-btn">Save</button>
-                <button id="delete-btn" name="delete">Delete</button>
+                  </div>
+                  <input type="hidden" id="album-id" value="<?= $id ?>">
+                  <div class="button">
+                    <button id="create-btn">Save</button>
+                    <button id="delete-btn" name="delete">Delete</button>
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="selectsong-container">
+              <div class="selectsong-title">
+                <h3 id="selectsong-title">Select Song for Album</h3>
+              </div>
+              <div class="songlist">
+                <table class="songlist-table">
+                  <tr class="th-row">
+                    <th class="th-number">#</th>
+                    <th class="th-title">TITLE</th>
+                    <th class="th-duration">DURATION</th>
+                    <th class="th-genre">GENRE</th>
+                    <th class="th-year">YEAR</th>
+
+                  </tr>
+                  <?php foreach ($result1 as $row1) : ?>
+                    <tr class="songrow">
+                      <td><input type='checkbox' class="checkbox" value="<?php echo $row1['song_id'] ?>"></td>
+                      <td>
+                        <div class="songtitle">
+                          <img class="songtitle-img" src="assets/CoverImages/likedLogo.png" alt="" />
+                          <div class="songtitle-desc">
+                            <p class="songtitle-title">
+                              <a href="songDetail.html"><?= $row1['Judul'] ?></a>
+                            </p>
+
+                          </div>
+                        </div>
+                      </td>
+                      <td><?= $row1['Duration'] ?></td>
+                      <td><?= $row1['Genre'] ?></td>
+                      <td><?= date('Y', strtotime($row1['Tanggal_terbit'])) ?></td>
+
+
+                    </tr>
+                  <?php endforeach; ?>
+                </table>
+              </div>
+              <div class="song-submit-form2 button">
+                <button id="save2-btn">Save</button>
+              </div>
+            </div>
+
           </div>
-        </div>
-        <div class="selectsong-container">
-          <div class="selectsong-title">
-            <h3 id="selectsong-title">Select Song for Album</h3>
-          </div>
-          <div class="songlist">
-            <table class="songlist-table">
-              <tr class="th-row">
-                <th class="th-number">#</th>
-                <th class="th-title">TITLE</th>
-                <th class="th-duration">DURATION</th>
-                <th class="th-genre">GENRE</th>
-                <th class="th-year">YEAR</th>
-
-              </tr>
-              <?php foreach ($result1 as $row1) : ?>
-                <tr class="songrow">
-                  <td><input type='checkbox' class="checkbox" value="<?php echo $row1['song_id'] ?>"></td>
-                  <td>
-                    <div class="songtitle">
-                      <img class="songtitle-img" src="assets/CoverImages/likedLogo.png" alt="" />
-                      <div class="songtitle-desc">
-                        <p class="songtitle-title">
-                          <a href="songDetail.html"><?= $row1['Judul'] ?></a>
-                        </p>
-
-                      </div>
-                    </div>
-                  </td>
-                  <td><?= $row1['Duration'] ?></td>
-                  <td><?= $row1['Genre'] ?></td>
-                  <td><?= date('Y', strtotime($row1['Tanggal_terbit'])) ?></td>
-
-
-                </tr>
-              <?php endforeach; ?>
-            </table>
-          </div>
-          <div class="song-submit-form2 button">
-            <button id="save2-btn">Save</button>
-          </div>
-        </div>
-
-      </div>
+      <?php }
+      } ?>
       <script src="script/detailAlbum.js"></script>
 </body>
 

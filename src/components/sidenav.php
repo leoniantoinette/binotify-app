@@ -10,6 +10,18 @@
       <li><a href="search.php">Search</a></li>
       <li><a href="albumList.php?halaman=1">Album</a></li>
     </ul>
+
+    <!-- if login -->
+    <?php
+    if (isset($_SESSION['login'])) {
+      echo "<ul class=\"sidenav-items-list\">
+      <li><a href=\"penyanyiPremium.php\">List Penyanyi Premium</a></li>
+      <li><a>List Lagu Premium</a></li>
+    </ul>
+      ";
+    }
+    ?>
+
     <!-- if admin -->
     <?php
     if (isset($_SESSION['login'])) {

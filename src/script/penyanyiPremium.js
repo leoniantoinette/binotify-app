@@ -39,7 +39,7 @@ const createPenyanyiRow = (listPenyanyi, penyanyiID) => {
   if (penyanyiID.includes(listPenyanyi.user_id)) {
     const child = `
       <p class="penyanyi-name">${listPenyanyi.name}</p>
-      <button class="seesongs-btn" value="${listPenyanyi.user_id}"><p>See Songs</p><i class="fa fa-chevron-right"></i></button>
+      <a href="songPremium.php?id=${listPenyanyi.user_id}&artist=${listPenyanyi.name}" class="seesongs-btn"><p>See Songs</p><i class="fa fa-chevron-right"></i></a>
     `;
     tr.innerHTML = child;
   } else {

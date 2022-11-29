@@ -1,0 +1,99 @@
+body {
+  display: flex;
+}
+
+.songPremium-container {
+  width: 80%;
+  background: linear-gradient(
+    hsl(290deg 52% 38%) 5%,
+    hsl(286deg 46% 35%) 10%,
+    rgba(31, 31, 31, 1) 40%
+  );
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  padding: 3rem;
+}
+
+.header-desc {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  color: #fff;
+}
+
+.header-desc p {
+  font-weight: 300;
+  font-stretch: ultra-expanded;
+}
+
+.header-img {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 20%;
+  width: 20%;
+}
+
+.songlist {
+  color: gray;
+  margin-top: 1rem;
+}
+
+.songrow:hover {
+  background-color: #6e6e6e71;
+}
+
+.songlist-table {
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+}
+
+.songtitle {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+}
+
+.songtitle-desc {
+  padding-left: 1rem;
+}
+
+.songtitle-title {
+  font-weight: 300;
+  font-stretch: ultra-expanded;
+  padding-bottom: 0.2rem;
+  color: #fff;
+}
+
+.songtitle td {
+  font-size: 0.8rem;
+}
+
+.th-audio {
+  width: 25%;
+}
+
+.audio {
+  text-align: right;
+  padding: 0.5rem 0.5rem;
+}
+
+audio {
+  height: 2.8rem;
+}
+
+.th-title {
+  width: 65%;
+  padding-left: 1rem;
+}
+
+.th-row {
+  padding: 2rem;
+  border-bottom: 0.1rem solid #fff;
+}
+
+.th-row th {
+  font-size: 0.8rem;
+  font-weight: thin;
+}

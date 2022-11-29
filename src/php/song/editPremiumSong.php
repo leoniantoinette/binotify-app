@@ -1,11 +1,6 @@
 <?php
     header('Access-Control-Allow-Origin: http://localhost:3000');
     ini_set('display_errors', 1); error_reporting(1);
-
-    echo $_FILES['audiofile']['tmp_name'];
-    echo $_POST['song_id'];
-    echo $_POST['title'];
-
     function checkFile($file_name_comp, $target_dir)
      {
     $extension = pathinfo($file_name_comp, PATHINFO_EXTENSION);

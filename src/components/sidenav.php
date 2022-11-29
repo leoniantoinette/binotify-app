@@ -16,7 +16,7 @@
     if (isset($_SESSION['login'])) {
       echo "<ul class=\"sidenav-items-list\">
       <li><a href=\"penyanyiPremium.php\">List Penyanyi Premium</a></li>
-      <li><a>List Lagu Premium</a></li>
+      <li><a href=\"songPremiumList.php\">List Lagu Premium</a></li>
     </ul>
       ";
     }

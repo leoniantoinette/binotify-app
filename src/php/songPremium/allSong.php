@@ -3,9 +3,6 @@
 include '../../config/config.php';
 session_start();
 
-$listPenyanyi = file_get_contents('http://localhost:3001/api/list-penyanyi');
-$listPenyanyi = json_decode($listPenyanyi);
-
 // get user ID
 $username = $_SESSION['username'];
 $queryGetUserID = "SELECT user_id FROM user WHERE username = '$username'";
@@ -20,7 +17,21 @@ $rowsPenyanyiID = [];
 while ($row = mysqli_fetch_assoc($resultGetPenyanyiID)) {
   $rowsPenyanyiID[] = $row;
 }
+$penyanyiID = array_column($rowsPenyanyiID, 'creator_id');
 
-if ($resultGetPenyanyiID) {
-  echo json_encode(array("listPenyanyi" => $listPenyanyi, "penyanyiID" => $rowsPenyanyiID));
+// get all song list
+$songList = [];
+
+foreach ($penyanyiID as $id) {
+  $songs = file_get_contents("http://localhost:3001/api/list-lagu/user/{$userID}/penyanyi/{$id}");
+  $songs = json_decode($songs);
+  if ($songs != "") {
+    $songList = array_merge((array)$songList, (array)$songs);
+  }
 }
+
+// get list penyanyi
+$listPenyanyi = file_get_contents('http://localhost:3001/api/list-penyanyi');
+$listPenyanyi = json_decode($listPenyanyi);
+
+echo json_encode(array("songList" => $songList, "listPenyanyi" => $listPenyanyi));

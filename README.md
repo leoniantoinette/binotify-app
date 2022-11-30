@@ -31,6 +31,11 @@ Untuk menjalankan program pastikan Anda telah mendownload dan menginstall hal-ha
 Buka folder htdocs yang berada di dalam folder XAMPP, lalu clone repository ini. Selanjutnya jalankan
 link berikut ini pada browser di komputer Anda (localhost/tugas-besar-1). Lalu, download database dengan judul *spotify.sql* pada folder database dan lakukan import pada file tersebut. Sesuaikan database pada file config.php jika dibutuhkan database baru atau biarkan untuk menggunakan database remote yang sudah terisi.
 
+## Changes
+1. Terdapat penambahan tabel subscription pada database
+2. Terdapat penambahan fitur halaman list penyanyi premium
+3. Terdapat penambahan fitur halaman list lagu premium
+4. Endpoint callback
 ## Screenshot
 1. Halaman Login <img src="src/assets/readme/login.png" />
 2. Halaman Register <img src="src/assets/readme/register.png" />
@@ -41,7 +46,8 @@ link berikut ini pada browser di komputer Anda (localhost/tugas-besar-1). Lalu, 
 7. Halaman Detail Lagu <img src="src/assets/readme/detailLagu.jpg" />
 8. Halaman Daftar User <img src="src/assets/readme/daftarUser.jpg" />
 9. Halaman Search, Sort, Filter <img src="src/assets/readme/search.jpg" />
-
+10. Halaman List lagu premium <img src="src/assets/readme/lagupremium.png" />
+11. Halaman List penyanyi premium <img src="src/assets/readme/penyanyipremium.png" />
 ## Authors
 <table>
   <tr >
@@ -53,8 +59,8 @@ link berikut ini pada browser di komputer Anda (localhost/tugas-besar-1). Lalu, 
     <tr >
       <td><a href="https://gitlab.informatika.org/leoniantoinette"><b>Flavia Beatrix Leoni Antoinette Santoso</b></a></td>
       <td>13520051</td>
-      <td>Membuat Sort, Filter, Search Page, Tambah/Delete Album, dan Daftar User</td>
-      <td>Membuat Sort, Filter, Search Page, Tambah/Delete Album, dan Daftar User</td>
+      <td>Membuat Sort, Filter, Search Page, Tambah/Delete Album, dan Daftar User, List Penyanyi dan Lagu premium</td>
+      <td>Membuat Sort, Filter, Search Page, Tambah/Delete Album, dan Daftar User, List Penyanyi dan Lagu premium</td>
     </tr>
     <tr>
       <td><a href="https://gitlab.informatika.org/febryola"><b>Febryola Kurnia Putri</b></a></td>

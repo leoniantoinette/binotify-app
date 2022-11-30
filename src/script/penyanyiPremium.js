@@ -19,6 +19,24 @@ const getListPenyanyi = () => {
   });
 };
 
+const postData = (url, data) => {
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", url);
+    xhr.onload = () => {
+      if (xhr.status === 200) {
+        resolve(xhr.responseText);
+      } else {
+        reject(xhr.responseText);
+      }
+    };
+    xhr.onerror = () => {
+      reject(xhr.responseText);
+    };
+    xhr.send(data);
+  });
+};
+
 const ListPenyanyi = () => {
   // delete all rows
   listPenyanyiPremium.innerHTML = "";
@@ -26,10 +44,41 @@ const ListPenyanyi = () => {
   // get all penyanyi and append it to the table
   getListPenyanyi().then((penyanyi) => {
     penyanyi = JSON.parse(penyanyi);
+    const userID = penyanyi.userID;
     const penyanyiID = penyanyi.penyanyiID.map(object => parseInt(object.creator_id));
     penyanyi.listPenyanyi.forEach((data) => {
       listPenyanyiPremium.appendChild(createPenyanyiRow(data, penyanyiID));
     });
+    const subscribeBtn = document.querySelectorAll(".subscribe-btn");
+    subscribeBtn.forEach(element => {
+      element.addEventListener("click", () => {
+        console.log("user id: " + userID);
+        const penyanyiID = element.value;
+        console.log("penyanyi id " + penyanyiID)
+        const data = {
+          userID: userID,
+          penyanyiID: element.value
+        }
+        const formData = new FormData();
+        formData.set("data", JSON.stringify(data));
+        postData("php/subscription/addSoap.php", formData)
+          .then((response) => {
+            var parser = new DOMParser();
+            var xmlDoc = parser.parseFromString(response,"text/xml");
+            let res = xmlDoc.getElementsByTagName("return")[0].childNodes[0].nodeValue;
+            if (res) {
+              postData("php/subscription/add.php", formData)
+                .then((response) => {
+                  if (response) {
+                    alert("Subscription request sent!");
+                  }
+                })
+            } else {
+              alert("An error occurred while sending subscription request!");
+            }
+          })
+      });
+    })
   });
 };
 

@@ -22,5 +22,5 @@ while ($row = mysqli_fetch_assoc($resultGetPenyanyiID)) {
 }
 
 if ($resultGetPenyanyiID) {
-  echo json_encode(array("listPenyanyi" => $listPenyanyi, "penyanyiID" => $rowsPenyanyiID));
+  echo json_encode(array("listPenyanyi" => $listPenyanyi, "penyanyiID" => $rowsPenyanyiID, "userID" => $userID));
 }

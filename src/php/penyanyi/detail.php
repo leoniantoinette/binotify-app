@@ -13,14 +13,14 @@ $resultGetUserID = mysqli_query($conn, $queryGetUserID);
 $rowUserID = mysqli_fetch_assoc($resultGetUserID);
 $userID = $rowUserID['user_id'];
 
-// get penyanyi ID that user subscribed
-$queryGetPenyanyiID = "SELECT creator_id FROM subscription WHERE subscriber_id = '$userID' AND status = 'ACCEPTED'";
-$resultGetPenyanyiID = mysqli_query($conn, $queryGetPenyanyiID);
-$rowsPenyanyiID = [];
-while ($row = mysqli_fetch_assoc($resultGetPenyanyiID)) {
-  $rowsPenyanyiID[] = $row;
+// get subscription list
+$queryGetSubscription = "SELECT creator_id, status FROM subscription WHERE subscriber_id = $userID";
+$resultGetSubscription = mysqli_query($conn, $queryGetSubscription);
+$subscriptionList = [];
+while ($rowSubscription = mysqli_fetch_assoc($resultGetSubscription)) {
+  $subscriptionList[] = $rowSubscription;
 }
 
-if ($resultGetPenyanyiID) {
-  echo json_encode(array("listPenyanyi" => $listPenyanyi, "penyanyiID" => $rowsPenyanyiID, "userID" => $userID));
+if ($resultGetSubscription) {
+  echo json_encode(array("listPenyanyi" => $listPenyanyi, "subscriptionList" => $subscriptionList, "userID" => $userID));
 }

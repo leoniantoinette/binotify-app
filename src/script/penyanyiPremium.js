@@ -45,9 +45,8 @@ const ListPenyanyi = () => {
   getListPenyanyi().then((penyanyi) => {
     penyanyi = JSON.parse(penyanyi);
     const userID = penyanyi.userID;
-    const penyanyiID = penyanyi.penyanyiID.map(object => parseInt(object.creator_id));
     penyanyi.listPenyanyi.forEach((data) => {
-      listPenyanyiPremium.appendChild(createPenyanyiRow(data, penyanyiID));
+      listPenyanyiPremium.appendChild(createPenyanyiRow(data, penyanyi.subscriptionList));
     });
     const subscribeBtn = document.querySelectorAll(".subscribe-btn");
     subscribeBtn.forEach(element => {
@@ -82,19 +81,36 @@ const ListPenyanyi = () => {
   });
 };
 
-const createPenyanyiRow = (listPenyanyi, penyanyiID) => {
+const createPenyanyiRow = (listPenyanyi, subscriptionList) => {
   const tr = document.createElement("tr");
   tr.classList.add("penyanyi-row");
-  if (penyanyiID.includes(listPenyanyi.user_id)) {
+
+  const obj = subscriptionList.find(object => object.creator_id == listPenyanyi.user_id);
+  if (obj === undefined) {
+    const child = `
+      <p class="penyanyi-name">${listPenyanyi.name}</p>
+      <button class="subscribe-btn" value="${listPenyanyi.user_id}">Subscribe</button>
+    `;
+    tr.innerHTML = child;
+  } else if (obj.status == "ACCEPTED") {
     const child = `
       <p class="penyanyi-name">${listPenyanyi.name}</p>
       <a href="songPremium.php?id=${listPenyanyi.user_id}&artist=${listPenyanyi.name}" class="seesongs-btn"><p>See Songs</p><i class="fa fa-chevron-right"></i></a>
     `;
     tr.innerHTML = child;
-  } else {
+  } else if (obj.status == "PENDING") {
     const child = `
       <p class="penyanyi-name">${listPenyanyi.name}</p>
-      <button class="subscribe-btn" value="${listPenyanyi.user_id}">Subscribe</button>
+      <div class="pending-btn"><p>Request Sent!</p></div>
+    `;
+    tr.innerHTML = child;
+  } else if (obj.status == "REJECTED") {
+    const child = `
+      <p class="penyanyi-name">${listPenyanyi.name}</p>
+      <div class="rejected-btn">
+        <i class="fa fa-times"></i>
+        <span>Rejected</span>
+      </div>
     `;
     tr.innerHTML = child;
   }

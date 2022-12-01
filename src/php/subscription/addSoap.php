@@ -8,13 +8,17 @@ $penyanyiID = $postData["penyanyiID"];
 
 // soap
 $webservice_url = "http://localhost:8081/service/subscription";
+$ip = $_SERVER['SERVER_ADDR'];
+$endpoint = "/service/subscription";
 
 $request_param = '<?xml version="1.0" encoding="utf-8"?>
   <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
       <Body>
           <addSubscription xmlns="http://services.binotify/">
-              <arg0 xmlns="">' . $penyanyiID .  '</arg0>
-              <arg1 xmlns="">' . $userID . '</arg1>
+              <arg0 xmlns="">' . $ip . '</arg0>
+              <arg1 xmlns="">' . $endpoint . '</arg1>
+              <arg2 xmlns="">' . $penyanyiID .  '</arg2>
+              <arg3 xmlns="">' . $userID . '</arg3>
           </addSubscription>
       </Body>
   </Envelope>';

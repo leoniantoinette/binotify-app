@@ -70,6 +70,7 @@ const ListPenyanyi = () => {
                 .then((response) => {
                   if (response) {
                     alert("Subscription request sent!");
+                    ListPenyanyi();
                   }
                 })
             } else {

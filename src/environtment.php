@@ -1,5 +1,4 @@
 <?php
-
 // API key for PHP 
-$API_KEY = "ee/qRjwWmfHC65DKxAho5EgQUhnoQFES30kovFeJC4U="
+$API_KEY = "tn5rZbGA7A1eRSgFY9pkOXltUshGghPK0mBptzBJ2XU="
 ?>

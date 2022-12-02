@@ -48,6 +48,7 @@ link berikut ini pada browser di komputer Anda (localhost/tugas-besar-1). Lalu, 
 9. Halaman Search, Sort, Filter <img src="src/assets/readme/search.jpg" />
 10. Halaman List lagu premium <img src="src/assets/readme/lagupremium.png" />
 11. Halaman List penyanyi premium <img src="src/assets/readme/penyanyipremium.png" />
+12. Halaman List lagu premium dari penyanyi tertentu <img src="src/assets/readme/lagupremiumartist.png" />
 ## Authors
 <table>
   <tr >

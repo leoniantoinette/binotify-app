@@ -1,5 +1,6 @@
 <?php
 
+include '../../environtment.php';
 include '../../config/config.php';
 
 $postData = json_decode($_POST["data"], true);
@@ -19,6 +20,7 @@ $request_param = '<?xml version="1.0" encoding="utf-8"?>
               <arg1 xmlns="">' . $endpoint . '</arg1>
               <arg2 xmlns="">' . $penyanyiID .  '</arg2>
               <arg3 xmlns="">' . $userID . '</arg3>
+              <arg4 xmlns="">' . $API_KEY . '</arg4>
           </addSubscription>
       </Body>
   </Envelope>';

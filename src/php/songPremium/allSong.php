@@ -1,6 +1,7 @@
 <?php
 
 include '../../config/config.php';
+include '../../environtment.php';
 session_start();
 
 // get user ID
@@ -21,6 +22,8 @@ $request_param = '<?xml version="1.0" encoding="utf-8"?>
     <validateDatabase xmlns="http://services.binotify/">
       <arg0 xmlns="">' . $ip . '</arg0>
       <arg1 xmlns="">' . $endpoint . '</arg1>
+      <arg2 xmlns="">' . $API_KEY . '</arg2>
+
     </validateDatabase>
   </Body>
 </Envelope>';

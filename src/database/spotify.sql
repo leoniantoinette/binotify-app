@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 19 Nov 2022 pada 08.01
+-- Waktu pembuatan: 02 Des 2022 pada 04.59
 -- Versi server: 10.6.5-MariaDB
 -- Versi PHP: 7.3.33
 
@@ -138,8 +138,7 @@ INSERT INTO `song` (`song_id`, `Judul`, `Penyanyi`, `Tanggal_terbit`, `Genre`, `
 (9356, 'Engineering Manager', 'Dr. Lula McLaughlin', '2010-10-06', 'Jazz', 198, '../assets/song/', 'assets/CoverImages/likedLogo.png', 16),
 (9570, 'Captain', 'Dr. Magdalena Eichmann', '2008-04-01', 'Rock', 217, '../assets/song/', 'assets/CoverImages/likedLogo.png', 9),
 (9628, 'Aviation Inspector', 'Alicia Dach', '1974-12-04', 'Jazz', 198, '../assets/song/', 'assets/CoverImages/likedLogo.png', NULL),
-(9932, 'Mathematical Scientist', 'Willow Cremin Jr.', '1981-08-03', 'Rock', 217, '../assets/song/', 'assets/CoverImages/likedLogo.png', 9),
-(9934, 'gatau apa', 'akudong', '2022-10-18', 'Jazz', 223, 'assets/Song/TWICE What is Love_ M-V.mp3', 'assets/CoverImages/Gambar-Pemandangan-Alam-Danau-1460.jpg', NULL);
+(9932, 'Mathematical Scientist', 'Willow Cremin Jr.', '1981-08-03', 'Rock', 217, '../assets/song/', 'assets/CoverImages/likedLogo.png', 9);
 
 --
 -- Trigger `song`
@@ -174,7 +173,7 @@ DELIMITER ;
 CREATE TABLE `subscription` (
   `creator_id` int(11) NOT NULL,
   `subscriber_id` int(11) NOT NULL,
-  `status` enum('PENDING','ACCEPTED','REJECTED','') NOT NULL
+  `status` enum('PENDING','ACCEPTED','REJECTED','') NOT NULL DEFAULT 'PENDING'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -182,7 +181,21 @@ CREATE TABLE `subscription` (
 --
 
 INSERT INTO `subscription` (`creator_id`, `subscriber_id`, `status`) VALUES
-(1, 1, 'PENDING');
+(1, 978574100, 'ACCEPTED'),
+(2, 978574100, 'PENDING'),
+(4, 978574100, 'REJECTED'),
+(5, 978574100, 'PENDING'),
+(7, 978574100, 'PENDING'),
+(8, 978574100, 'ACCEPTED'),
+(10, 978574100, 'PENDING'),
+(12, 978574100, 'PENDING'),
+(13, 978574100, 'REJECTED'),
+(14, 978574100, 'PENDING'),
+(15, 978574100, 'PENDING'),
+(16, 978574100, 'PENDING'),
+(17, 978574100, 'PENDING'),
+(18, 978574100, 'PENDING'),
+(20, 978574100, 'PENDING');
 
 -- --------------------------------------------------------
 
@@ -306,7 +319,8 @@ INSERT INTO `user` (`user_id`, `email`, `password`, `username`, `isAdmin`) VALUE
 (978574100, 'freakyfun@gmail.com', '$2y$10$hzu2LE7vu4VisBGh72C/fOKW5BBzwABgqJebmO4RlkK1GTYOJHD52', 'freakyfun', 1),
 (978574102, 'hhhh@gmail.com', '$2y$10$OYTyTBNZa29RIR0rz9v30.7LrTEtFF8cLNpV1MCSkZIl12cLb8Gtu', 'itb13520140', 0),
 (978574104, '', '$2y$10$SNRVj3GM6shTmdDY/kawh.Mq4Wtl3fUyP.hlb1bBBcTNA4Xy2DTE.', '', 0),
-(978574105, 'ee@gmail.com', '$2y$10$xDNowDRmzyA1yRnwmWNEo.XFhJhrxFu9IeLPC7f4tTf6eJM6NfY.K', 'f', 0);
+(978574105, 'ee@gmail.com', '$2y$10$xDNowDRmzyA1yRnwmWNEo.XFhJhrxFu9IeLPC7f4tTf6eJM6NfY.K', 'f', 0),
+(978574106, 'username@test.com', '$2y$10$MOL/vYSq0gVRevTz.r.C5eh/rq8yG5FGKjXCMHb/EOdrIlJPqojui', 'username', 0);
 
 -- --------------------------------------------------------
 
@@ -369,7 +383,7 @@ ALTER TABLE `song`
 -- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=978574106;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=978574107;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)

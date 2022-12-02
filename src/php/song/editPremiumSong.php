@@ -1,5 +1,6 @@
 <?php
     header('Access-Control-Allow-Origin: http://localhost:3000');
+    header('Access-Control-Allow-Credentials: true');
     ini_set('display_errors', 1); error_reporting(1);
     function checkFile($file_name_comp, $target_dir)
      {
@@ -31,4 +32,3 @@
 
 
     }
-?>
